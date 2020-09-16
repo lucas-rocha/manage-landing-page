@@ -96,3 +96,46 @@
 .intro__button {
   margin: 2rem 0;
 }
+
+/*---------- section features ----------------- */
+
+.features-intro {
+  text-align: center;
+}
+.features-intro__paragraph {
+  color: $DarkGrayishBlue;
+}
+.feature-content {
+  margin-top: 6rem;
+}
+.feature {
+  margin-top: 4rem;
+}
+.feature__title {
+  display: flex;
+  width: calc(100% + 2rem);
+  color: $DarkBlue;
+  background: $VeryPaleRed;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  border-radius: 50px 0 0 50px;
+  overflow: hidden;
+
+  &::before {
+    left: 0;
+    content: attr(data-number);
+    background: $BrightRed;
+    z-index: 1;
+    width: 6rem;
+    height: 100%;
+    border-radius: 50px;
+    color: $VeryLightGray;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-right: 2rem;
+  }
+}
+.feature__paragraph {
+  color: $DarkGrayishBlue;
+  text-align: left;
+}
