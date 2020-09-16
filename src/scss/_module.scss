@@ -1,0 +1,99 @@
+.button {
+  padding: 1.4rem 3rem;
+  font-weight: 700;
+  transition: .5s;
+}
+.button-red {
+  background: $BrightRed;
+  color: $VeryLightGray;
+  box-shadow: 1px 6px 8px #f25f3a63;
+  &:hover {
+    background: #f38b71;
+  }
+}
+.button-white {
+  background: #fff;
+  color: $BrightRed;
+  &:hover {
+    background: #e1e1e1;
+  }
+}
+.section-title {
+  text-align: center;
+  color: $DarkBlue;
+  line-height: 4rem;
+}
+/*--------------- HEADER -------------------------------*/
+.header__logo {
+  height: 2rem;
+}
+.menu-desktop,
+.popup-menu,
+.header__button,
+.icon-close {
+  display: none;
+}
+.icon-hamburger {
+  background: transparent;
+  border: 0;
+}
+.icon-close {
+  z-index: 99;
+}
+.menu-desktop__link {
+  font-size: 1.3rem;
+  padding: 1rem;
+  color: $DarkBlue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.popup-menu {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: blue;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.7));
+}
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  margin: 10rem 2rem;
+  padding: 2rem 0;
+  border-radius: 4px;
+}
+.menu-mobile__link {
+  color: $DarkBlue;
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* ------------------- section intro ---------------*/
+
+.intro__illustration,
+.intro__title,
+.intro__paragraph {
+  text-align: center;
+}
+.main-intro {
+  text-align: center;
+}
+.intro__illustration {
+  width: 100%;
+  max-width: 44.4rem;
+  align-self: center;
+}
+.intro__title {
+  color: $DarkBlue;
+}
+.intro__paragraph {
+  color: $DarkGrayishBlue;
+}
+.intro__button {
+  margin: 2rem 0;
+}
