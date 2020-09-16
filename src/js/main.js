@@ -58,6 +58,26 @@ function toggleNav() {
   });
 }
 
+let glideOptions = {
+    type: 'carousel',
+    perView: 3,
+    perTouch: 1,
+    autoplay: 4000,
+    breakpoints: {
+      780: {
+        perView: 1,
+      },
+      990: {
+        perView: 2,
+      },
+    },
+    classes: {
+      activeNav: 'testimonial-bullet__button--active',
+    },
+  };
+
 document.addEventListener('DOMContentLoaded', () => {
   toggleNav();
+  let glide = new Glide('.glide', glideOptions);
+  glide.mount();
 });

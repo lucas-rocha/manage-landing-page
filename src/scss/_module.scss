@@ -139,3 +139,42 @@
   color: $DarkGrayishBlue;
   text-align: left;
 }
+
+/* ------------- section testimonials ---------------------- */
+
+.testimonials {
+  text-align: center;
+}
+.testimonials__title {
+  margin-bottom: 5rem;
+}
+.testimonial {
+  background: $VeryLightGray;
+  margin-top: 3.5rem;
+  cursor: grab;
+}
+.testimonial__name {
+  color: $DarkBlue;
+}
+.testimonial__image {
+  width: 7rem;
+  margin-top: -3.5rem;
+}
+.testimonial__quote {
+  padding-bottom: 2.5rem;
+  color: $DarkGrayishBlue;
+}
+
+.testimonial-bullet__button {
+  width: 0.8rem;
+  height: 0.8rem;
+  border: 1px solid $BrightRed;
+  border-radius: 100%;
+  background: transparent;
+  padding: 0;
+  margin: 0.1rem;
+}
+
+.testimonial__button {
+  margin-top: 2rem;
+}
