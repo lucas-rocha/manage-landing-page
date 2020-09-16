@@ -241,9 +241,17 @@
 
 .get-started__title {
   color: #fff;
+  @include screen-sm {
+    max-width: 50%;
+    text-align: left;
+  }
 }
 .get-started__button {
   margin-top: 1rem;
+  @include screen-md {
+    width: 15rem;
+    height: 5rem;
+  }
 }
 
 /* ---------- section footer ----------------- */
@@ -255,6 +263,9 @@
   position: relative;
   display: flex;
   align-self: flex-start;
+  @include screen-sm {
+    justify-self: end;
+  }
 }
 .subscription__email {
   width: 100%;
@@ -302,6 +313,12 @@
   display: flex;
   justify-content: space-evenly;
   grid-area: socials;
+
+  @include screen-sm {
+    align-items: flex-end;
+    justify-content: space-between;
+    max-width: 15rem;
+  }
 }
 
 .socials__icons {
@@ -318,12 +335,20 @@
   grid-area: footer-logo;
   justify-self: center;
   align-self: flex-start;
+  @include screen-sm {
+    justify-self: flex-start;
+  }
 }
 .copyright {
   grid-area: copyright;
   text-align: center;
   line-height: 0;
   color: $DarkGrayishBlue;
+
+  @include screen-sm {
+    text-align: right;
+    align-self: flex-end;
+  }
 }
 .copyright__paragraph {
   font-size: 1.4rem;

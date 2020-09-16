@@ -116,6 +116,18 @@
   background-image: url('../images/bg-simplify-section-mobile.svg');
   background-repeat: no-repeat;
   background-position: 0 50%;
+  @include screen-sm {
+    padding: 1rem 0;
+    background-image: url('../images/bg-simplify-section-desktop.svg');
+    background-position: 20rem bottom;
+  }
+}
+.get-started__container {
+  @include screen-sm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .footer {
@@ -132,4 +144,10 @@
     'socials socials'
     'footer-logo footer-logo'
     'copyright copyright';
+
+  @include screen-sm {
+    grid-template-areas:
+      'footer-logo nav-one nav-two subscription'
+      'socials nav-one nav-two copyright';
+  }
 }
