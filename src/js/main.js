@@ -58,6 +58,29 @@ function toggleNav() {
   });
 }
 
+function validateEmail(){
+  const form = document.forms.subscription;
+  const inputEmail = form.elements["email"];
+  const errorElement = document.querySelector('.subscription__error');
+
+  function setError() {
+    errorElement.classList.add('subscription__error-active');
+  }
+  function removeError() {
+    errorElement.classList.remove('subscription__error-active');
+  }
+
+  form.addEventListener('submit', (event) => {
+    if(!inputEmail.validity.valid) {
+      event.preventDefault();
+      setError();
+      inputEmail.focus();
+    }
+  });
+
+  inputEmail.addEventListener('blur', removeError);  
+};
+
 let glideOptions = {
     type: 'carousel',
     perView: 3,
@@ -80,4 +103,5 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleNav();
   let glide = new Glide('.glide', glideOptions);
   glide.mount();
+  validateEmail();
 });
