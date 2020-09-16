@@ -69,3 +69,19 @@
   background-repeat: no-repeat;
   background-position: 0 50%;
 }
+
+.footer {
+  background: $VeryDarkBlue;
+}
+
+.footer__container {
+  padding-top: 6rem;
+  display: grid;
+  row-gap: 4rem;
+  grid-template-areas:
+    'subscription subscription'
+    'nav-one nav-two'
+    'socials socials'
+    'footer-logo footer-logo'
+    'copyright copyright';
+}

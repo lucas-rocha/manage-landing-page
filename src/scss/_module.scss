@@ -187,3 +187,86 @@
 .get-started__button {
   margin-top: 1rem;
 }
+
+/* ---------- section footer ----------------- */
+
+.footer__subscription {
+  grid-area: subscription;
+}
+.subscription {
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+}
+.subscription__email {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-radius: 25px;
+  background: #fff;
+  font-size: 1.4rem;
+  text-indent: 1rem;
+  border: 0;
+  margin-right: 1rem;
+  color: $DarkGrayishBlue;
+}
+.subscription__button {
+  padding: 1.2rem 3rem;
+  box-shadow: 0 0 0 $BrightRed;
+}
+.subscription__error {
+  position: absolute;
+  bottom: -3rem;
+  left: 1rem;
+  font-size: 1.2rem;
+  color: red;
+  display: none;
+}
+
+.nav-list {
+  justify-self: center;
+  line-height: 4rem;
+}
+
+.nav-list__link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.nav-one {
+  grid-area: nav-one;
+}
+.nav-two {
+  grid-area: nav-two;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-evenly;
+  grid-area: socials;
+}
+
+.socials__icons {
+  width: 2rem;
+  height: 2rem;
+  transition: .5s;
+  fill: #fff;
+  &:hover {
+    fill: $BrightRed;
+  }
+}
+
+.footer__logo {
+  grid-area: footer-logo;
+  justify-self: center;
+  align-self: flex-start;
+}
+.copyright {
+  grid-area: copyright;
+  text-align: center;
+  line-height: 0;
+  color: $DarkGrayishBlue;
+}
+.copyright__paragraph {
+  font-size: 1.4rem;
+}
