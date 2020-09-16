@@ -35,9 +35,22 @@
 .icon-hamburger {
   background: transparent;
   border: 0;
+  @include screen-md {
+    display: none;
+  }
 }
 .icon-close {
   z-index: 99;
+}
+.menu-desktop {
+  @include screen-md {
+    display: block;
+  }
+}
+.header__button {
+  @include screen-md {
+    display: block;
+  }
 }
 .menu-desktop__link {
   font-size: 1.3rem;
@@ -78,9 +91,18 @@
 .intro__title,
 .intro__paragraph {
   text-align: center;
+  @include screen-sm {
+    text-align: inherit;
+  }
 }
 .main-intro {
   text-align: center;
+  @include screen-sm {
+    text-align: initial;
+  }
+  @include screen-md {
+    width: 40rem;
+  }
 }
 .intro__illustration {
   width: 100%;
@@ -89,9 +111,16 @@
 }
 .intro__title {
   color: $DarkBlue;
+  @include screen-md {
+    font-size: 4.6rem;
+    line-height: 5rem;
+  }
 }
 .intro__paragraph {
   color: $DarkGrayishBlue;
+  @include screen-md {
+    width: 35rem;
+  }
 }
 .intro__button {
   margin: 2rem 0;
@@ -101,15 +130,37 @@
 
 .features-intro {
   text-align: center;
+  @include screen-sm {
+    text-align: left;
+    width: 50%;
+  }
+}
+.features-intro__title {
+  @include screen-md {
+    text-align: left;
+  }
 }
 .features-intro__paragraph {
   color: $DarkGrayishBlue;
+  @include screen-md {
+    max-width: 35rem;
+  }
 }
+
 .feature-content {
   margin-top: 6rem;
+  @include screen-sm {
+    margin-top: 0;
+    width: 50%;
+  }
 }
 .feature {
   margin-top: 4rem;
+  &:first-child {
+    @include screen-sm {
+      margin-top: 0;
+    }
+  }
 }
 .feature__title {
   display: flex;
@@ -134,10 +185,17 @@
     text-align: center;
     margin-right: 2rem;
   }
+
+  @include screen-md {
+    background: transparent;
+  }
 }
 .feature__paragraph {
   color: $DarkGrayishBlue;
   text-align: left;
+  @include screen-md {
+    margin-left: 8rem;
+  }
 }
 
 /* ------------- section testimonials ---------------------- */

@@ -18,13 +18,30 @@
     top: 0;
     right: 0;
     z-index: -9999;
+    @media (min-width: 530px) {
+      background-position: 20vw -23vw;
+    }
+    @media (min-width: 615px) {
+      background-position: 17vw -35vw;
+    }
+    @include screen-sm {
+      background-position: 46vw -13vw;
+      background-size: 67vw auto;
+    }
+    @media (min-width: 915px) {
+      background-position: 57vw -24vw;
+    }
+    @include screen-md {
+      background-position: 62vw -12vw;
+      background-size: 48vw auto;
+    }
   }
 }
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 /*------- SECTION INTRO ---------*/
@@ -33,6 +50,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @include screen-sm {
+    flex-direction: row-reverse;
+  }
+  @include screen-md {
+    padding-top: 7rem;
+    justify-content: space-between;
+  }
 }
 
 /*------- CONTENT SECTION -------*/
@@ -50,15 +74,39 @@
     z-index: -99;
     right: 0;
     top: -60vw;
+
+    @include screen-sm {
+      top: 20vw;
+      background-position: -36vw 35vw;
+      background-size: 70% auto;
+    }
+    @media (min-width: 877px) {
+      background-position: -39vw 32vw;
+      background-size: 70% auto;
+    }
+    @media (min-width: 930px) {
+      background-position: -26vw 14vw;
+      background-size: 53% auto;
+    }
+    @include screen-md {
+      background-position: -30vw 10vw;
+      background-size: 50% auto;
+    }
   }
 }
 
 .features__container {
   padding-top: 6rem;
+  @include screen-sm {
+    display: flex;
+  }
 }
 
 .testimonials__container {
   padding-bottom: 5rem;
+  @include screen-md {
+    padding-bottom: 10rem;
+  }
 }
 
 .get-started {
