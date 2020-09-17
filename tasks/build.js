@@ -37,8 +37,8 @@ function html() {
 				collapseWhitespace: true
 			})
 		)
-		.pipe(plugins.replace('.css', 'min.css'))
-		.pipe(plugins.replace('.js', 'min.js'))
+		.pipe(plugins.replace('.css', '.min.css'))
+		.pipe(plugins.replace('.js', '.min.js'))
 		.pipe(dest(paths.html.dist));
 };
 
